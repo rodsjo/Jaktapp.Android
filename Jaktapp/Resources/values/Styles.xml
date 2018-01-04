@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Jaktapp" parent="Jaktapp.Base">
+  </style>
+  
+  <style name="Jaktapp.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    
+    <!-- Theme colors from https://material.io/guidelines/style/color.html#color-color-palette -->
+
+    <!-- Using Indigo as primary color -->
+    <!-- Using Purple as secondary color -->
+    <item name="colorPrimary">@color/indigo_500</item>
+    <item name="colorPrimaryDark">@color/indigo_800</item>
+    <item name="colorAccent">@color/purple_500</item>
+  </style>
+</resources>
