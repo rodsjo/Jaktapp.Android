@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.v4.widget.DrawerLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:local="http://schemas.android.com/apk/res-auto"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/DrawerLayout"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
-  
-  <android.support.design.widget.AppBarLayout
-    android:id="@+id/appbarlayout"
-    android:layout_alignParentTop="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-    
-    <include
-      android:id="@+id/Toolbar"
-      layout="@layout/toolbar" />
-    </android.support.design.widget.AppBarLayout>
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
 
-  <LinearLayout
-    android:layout_below="@id/appbarlayout"
-    android:orientation="vertical"
+  <!-- Content -->
+  <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-      android:id="@+id/WelcomeText"
+  
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbarlayout"
+      android:layout_alignParentTop="true"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="" />
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     
-    <EditText
-      android:id="@+id/UserName"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:inputType="textEmailAddress"
-      android:hint="Epost" />
-
-    <EditText
-      android:id="@+id/Password"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:inputType="textPassword"
-      android:hint="Passord" />
+      <include layout="@layout/toolbar" />
     
-    <Button
-      android:id="@+id/LoginBtn"
+      </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+      android:id="@+id/MainLayout"
+      android:layout_below="@id/appbarlayout"
+      android:orientation="vertical"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Logg inn" />
-  </LinearLayout>
-</RelativeLayout>
+      android:layout_height="match_parent">
+
+      <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+          android:id="@+id/UserName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textEmailAddress"
+          android:hint="Epost" />
+      </android.support.design.widget.TextInputLayout>
+    
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+          android:id="@+id/Password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textPassword"
+          android:hint="Passord" />
+      </android.support.design.widget.TextInputLayout>
+    
+      <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logg inn" />
+    </LinearLayout>
+  </RelativeLayout>
+  <!-- Content end -->
+
+  <!-- Navigation drawer -->
+  <android.support.design.widget.NavigationView
+    android:id="@+id/LeftDrawer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="left|start"
+    app:headerLayout="@layout/drawer_header"
+    app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>
