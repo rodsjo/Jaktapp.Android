@@ -51,7 +51,7 @@ namespace Jaktapp
                 
                 _mapFragment = SupportMapFragment.NewInstance(mapOptions);
                 var transaction = ChildFragmentManager.BeginTransaction();
-                transaction.Add(Resource.Id.map_frame, _mapFragment, "MapFragment");
+                transaction.Add(Resource.Id.MapFrame, _mapFragment, "MapFragment");
                 transaction.Commit();
             }
             _mapFragment.GetMapAsync(this);

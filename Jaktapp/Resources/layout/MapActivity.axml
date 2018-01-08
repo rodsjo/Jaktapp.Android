@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
+<android.support.v4.widget.DrawerLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/DrawerLayout"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
-  <fragment
-    class="jaktapp.MapFragment"
-    android:id="@+id/mapFragment"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
+  
+  <!-- Content -->
+  <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-</LinearLayout>
+    android:layout_height="match_parent">
+    
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbarlayout"
+      android:layout_alignParentTop="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+      <include
+        android:id="@+id/MapToolbar"
+        layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+  
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_below="@id/appbarlayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <fragment
+        class="jaktapp.MapFragment"
+        android:id="@+id/MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+  </RelativeLayout>
+  <!-- End Content-->
+
+  <!-- Navigation drawer -->
+  <android.support.design.widget.NavigationView
+    android:id="@+id/LeftDrawer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="left|start"
+    app:headerLayout="@layout/drawerheader"
+    app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>
