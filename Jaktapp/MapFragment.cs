@@ -20,7 +20,6 @@ namespace Jaktapp
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            CreateMapFragmentIfNeeded();
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -37,9 +36,7 @@ namespace Jaktapp
 
             UpdateMyLocationButton();
 
-            _map.MoveCamera(_previousCameraPosition != null
-                ? CameraUpdateFactory.NewCameraPosition(_previousCameraPosition)
-                : CameraUpdateFactory.NewLatLngZoom(_selnes, 16));
+            _map.MoveCamera(CameraUpdateFactory.NewLatLngZoom(_selnes, 16));
         }
 
         private void CreateMapFragmentIfNeeded()
@@ -90,21 +87,10 @@ namespace Jaktapp
             }
         }
 
-        private CameraPosition _previousCameraPosition;
-
         public override void OnResume()
         {
             base.OnResume();
             CreateMapFragmentIfNeeded();
-        }
-
-        public override void OnPause()
-        {
-            base.OnPause();
-            if (_map != null)
-            { 
-                _previousCameraPosition = _map.CameraPosition;
-            }
         }
     }
 }

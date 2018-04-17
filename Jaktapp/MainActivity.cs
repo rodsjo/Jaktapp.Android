@@ -66,9 +66,23 @@ namespace Jaktapp
         {
             var fragment = _fragments[position];
 
-            SupportFragmentManager.BeginTransaction()
-                .Replace(Resource.Id.FragmentFrame, fragment)
-                .Commit();
+            if (SupportFragmentManager.FindFragmentByTag(position.ToString()) == null)
+            {
+                //Create it
+                SupportFragmentManager.BeginTransaction().Add(Resource.Id.FragmentFrame, fragment, position.ToString()).Commit();
+            }
+
+            //Show it
+            SupportFragmentManager.BeginTransaction().Show(fragment).Commit();
+
+            //Hide the other fragments
+            foreach (var frag in _fragments)
+            {
+                if (frag != fragment)
+                {
+                    SupportFragmentManager.BeginTransaction().Hide(frag).Commit();
+                }
+            }
         }
 
         private void OnNavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)
