@@ -20,22 +20,15 @@
       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
       <include
-        android:id="@+id/MapToolbar"
+        android:id="@+id/MainToolbar"
         layout="@layout/toolbar" />
 
     </android.support.design.widget.AppBarLayout>
-  
-    <LinearLayout
-      android:orientation="vertical"
+    <FrameLayout
+      android:id="@+id/FragmentFrame"
       android:layout_below="@id/appbarlayout"
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
-      <fragment
-        class="jaktapp.MapFragment"
-        android:id="@+id/MapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    </LinearLayout>
+      android:layout_height="match_parent" />
   </RelativeLayout>
   <!-- End Content-->
 

@@ -1,7 +1,12 @@
-﻿using Android.Gms.Maps;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Android.Views;
+using Plugin.Geolocator;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Fragment = Android.Support.V4.App.Fragment;
 
 namespace Jaktapp
@@ -29,16 +34,16 @@ namespace Jaktapp
             {
                 _map = googleMap;
             }
-            _map.MyLocationEnabled = true;
-            _map.MoveCamera(CameraUpdateFactory.NewLatLngZoom(_selnes, 16));
+
+            UpdateMyLocationButton();
+
+            _map.MoveCamera(_previousCameraPosition != null
+                ? CameraUpdateFactory.NewCameraPosition(_previousCameraPosition)
+                : CameraUpdateFactory.NewLatLngZoom(_selnes, 16));
         }
 
         private void CreateMapFragmentIfNeeded()
         {
-            if (_map != null)
-            {
-                return;
-            }
             _mapFragment = ChildFragmentManager.FindFragmentByTag("MapFragment") as SupportMapFragment;
 
             if (_mapFragment == null)
@@ -57,10 +62,49 @@ namespace Jaktapp
             _mapFragment.GetMapAsync(this);
         }
 
+        private async void UpdateMyLocationButton()
+        {
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+            if (status != PermissionStatus.Granted)
+            {
+                var results = new Dictionary<Permission, PermissionStatus>();
+                try
+                {
+                    results = await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location);
+                }
+                catch (TaskCanceledException)
+                {
+                    //Catches System.Threading.Tasks.TaskCanceledException: A task was canceled
+                }
+
+                //Best practice to always check that the key exists
+                if (results.ContainsKey(Permission.Location))
+                {
+                    status = results[Permission.Location];
+                }
+            }
+
+            if (_map != null)
+            {
+                _map.MyLocationEnabled = CrossGeolocator.Current.IsGeolocationAvailable && CrossGeolocator.Current.IsGeolocationEnabled;
+            }
+        }
+
+        private CameraPosition _previousCameraPosition;
+
         public override void OnResume()
         {
             base.OnResume();
             CreateMapFragmentIfNeeded();
+        }
+
+        public override void OnPause()
+        {
+            base.OnPause();
+            if (_map != null)
+            { 
+                _previousCameraPosition = _map.CameraPosition;
+            }
         }
     }
 }

@@ -2,11 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <group android:checkableBehavior="single">
     <item
-      android:id="@+id/navigation_item_1"
+      android:id="@+id/main_menu_item_map"
       android:checked="true"
-      android:title="Jau"/>
+      android:icon="@drawable/ic_map_gray"
+      android:title="Kart"/>
     <item
-      android:id="@+id/navigation_item_2"
-      android:title="God helg"/>
+      android:id="@+id/main_menu_item_create_hunt"
+      android:icon="@drawable/ic_add_gray"
+      android:title="Ny jakt"/>
+    <item
+      android:id="@+id/main_menu_item_friends"
+      android:icon="@drawable/ic_friends_gray"
+      android:title="Venner"/>
+    <item
+      android:id="@+id/main_menu_item_history"
+      android:icon="@drawable/ic_history_gray"
+      android:title="Historikk"/>
+    <item
+      android:id="@+id/main_menu_item_settings"
+      android:icon="@drawable/ic_settings_gray"
+      android:title="Innstillinger"/>
   </group>
 </menu>

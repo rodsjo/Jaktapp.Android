@@ -10,7 +10,6 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 namespace Jaktapp
 {
     [Activity(
-        Label = "Login",
         ScreenOrientation = ScreenOrientation.Portrait)]
     public class LoginActivity : AppCompatActivity
     {
@@ -22,10 +21,7 @@ namespace Jaktapp
 
             SetContentView(Resource.Layout.Login);
 
-            //TODO: Get username from local storage
-
             var toolbar = FindViewById<Toolbar>(Resource.Id.LoginToolbar);
-            toolbar.Title = "Logg inn";
             SetSupportActionBar(toolbar);
 
             _loginBtn = FindViewById<Button>(Resource.Id.LoginBtn);
@@ -34,10 +30,9 @@ namespace Jaktapp
 
         private void LoginBtnClick(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(MapActivity));
+            var intent = new Intent(this, typeof(MainActivity));
             StartActivity(intent);
 
-            //TODO: Call Finish() if successful login
             Finish();
         }
     }

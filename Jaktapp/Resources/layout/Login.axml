@@ -32,7 +32,7 @@
         <ImageView
           android:layout_width="150dp"
           android:layout_height="150dp"
-          android:layout_marginTop="10dp"
+          android:layout_marginTop="20dp"
           android:layout_marginBottom="10dp"
           android:src="@drawable/tiur_white_red_512"
           android:layout_gravity="center_horizontal" />
