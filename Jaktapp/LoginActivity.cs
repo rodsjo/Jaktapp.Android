@@ -19,7 +19,7 @@ namespace Jaktapp
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.Login);
+            SetContentView(Resource.Layout.LoginActivity);
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.LoginToolbar);
             SetSupportActionBar(toolbar);

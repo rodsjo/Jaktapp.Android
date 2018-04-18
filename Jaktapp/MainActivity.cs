@@ -23,7 +23,7 @@ namespace Jaktapp
         private DrawerLayout _drawerLayout;
         private NavigationView _leftDrawer;
         private View _drawerHeaderView;
-        private List<Fragment> _fragments;
+        private Dictionary<string, Fragment> _fragments;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -31,13 +31,13 @@ namespace Jaktapp
 
             SetContentView(Resource.Layout.MainActivity);
 
-            _fragments = new List<Fragment>
+            _fragments = new Dictionary<string, Fragment>
             {
-                new MapFragment(),
-                new CreateHuntFragment(),
-                new FriendsFragment(),
-                new HistoryFragment(),
-                new SettingsFragment(),
+                {"map", new MapFragment()},
+                {"create", new CreateHuntFragment()},
+                {"friends", new FriendsFragment()},
+                {"history", new HistoryFragment()},
+                {"settings", new SettingsFragment()},
             };
 
             _drawerLayout = FindViewById<DrawerLayout>(Resource.Id.DrawerLayout);
@@ -57,19 +57,18 @@ namespace Jaktapp
             //If first time you will want to go ahead and click first item
             if (savedInstanceState == null)
             {
-                MenuItemClicked(0);
-                SupportActionBar.Title = "Kart";
+                MenuItemClicked("map");
             }
         }
 
-        private void MenuItemClicked(int position)
+        private void MenuItemClicked(string tag)
         {
-            var fragment = _fragments[position];
+            var fragment = _fragments[tag];
 
-            if (SupportFragmentManager.FindFragmentByTag(position.ToString()) == null)
+            if (SupportFragmentManager.FindFragmentByTag(tag) == null)
             {
                 //Create it
-                SupportFragmentManager.BeginTransaction().Add(Resource.Id.FragmentFrame, fragment, position.ToString()).Commit();
+                SupportFragmentManager.BeginTransaction().Add(Resource.Id.FragmentFrame, fragment, tag).Commit();
             }
 
             //Show it
@@ -78,10 +77,33 @@ namespace Jaktapp
             //Hide the other fragments
             foreach (var frag in _fragments)
             {
-                if (frag != fragment)
+                if (frag.Key != tag)
                 {
-                    SupportFragmentManager.BeginTransaction().Hide(frag).Commit();
+                    SupportFragmentManager.BeginTransaction().Hide(frag.Value).Commit();
                 }
+            }
+            SetToolbarTitle(tag);
+        }
+
+        private void SetToolbarTitle(string tag)
+        {
+            switch (tag)
+            {
+                case "map":
+                    SupportActionBar.Title = "Kart";
+                    break;
+                case "create":
+                    SupportActionBar.Title = "Ny jakt";
+                    break;
+                case "friends":
+                    SupportActionBar.Title = "Venner";
+                    break;
+                case "history":
+                    SupportActionBar.Title = "Historikk";
+                    break;
+                case "settings":
+                    SupportActionBar.Title = "Innstillinger";
+                    break;
             }
         }
 
@@ -90,24 +112,19 @@ namespace Jaktapp
             switch (e.MenuItem.ItemId)
             {
                 case Resource.Id.main_menu_item_map:
-                    MenuItemClicked(0);
-                    SupportActionBar.Title = "Kart";
+                    MenuItemClicked("map");
                     break;
                 case Resource.Id.main_menu_item_create_hunt:
-                    MenuItemClicked(1);
-                    SupportActionBar.Title = "Ny jakt";
+                    MenuItemClicked("create");
                     break;
                 case Resource.Id.main_menu_item_friends:
-                    MenuItemClicked(2);
-                    SupportActionBar.Title = "Venner";
+                    MenuItemClicked("friends");
                     break;
                 case Resource.Id.main_menu_item_history:
-                    MenuItemClicked(3);
-                    SupportActionBar.Title = "Historikk";
+                    MenuItemClicked("history");
                     break;
                 case Resource.Id.main_menu_item_settings:
-                    MenuItemClicked(4);
-                    SupportActionBar.Title = "Innstillinger";
+                    MenuItemClicked("settings");
                     break;
             }
             _drawerLayout.CloseDrawers();

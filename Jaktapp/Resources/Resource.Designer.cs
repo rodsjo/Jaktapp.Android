@@ -26,6 +26,64 @@ namespace Jaktapp
 		
 		public static void UpdateIdValues()
 		{
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::Jaktapp.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::Jaktapp.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::Jaktapp.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::Jaktapp.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::Jaktapp.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::Jaktapp.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::Jaktapp.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::Jaktapp.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::Jaktapp.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::Jaktapp.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::Jaktapp.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::Jaktapp.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::Jaktapp.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::Jaktapp.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::Jaktapp.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::Jaktapp.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::Jaktapp.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::Jaktapp.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::Jaktapp.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::Jaktapp.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::Jaktapp.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::Jaktapp.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::Jaktapp.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::Jaktapp.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::Jaktapp.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::Jaktapp.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::Jaktapp.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::Jaktapp.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::Jaktapp.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::Jaktapp.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::Jaktapp.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::Jaktapp.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::Jaktapp.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::Jaktapp.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::Jaktapp.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::Jaktapp.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::Jaktapp.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast = global::Jaktapp.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_download_progress_number_format = global::Jaktapp.Resource.String.appcenter_distribute_download_progress_number_format;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_mandatory_update = global::Jaktapp.Resource.String.appcenter_distribute_downloading_mandatory_update;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install = global::Jaktapp.Resource.String.appcenter_distribute_install;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_message = global::Jaktapp.Resource.String.appcenter_distribute_install_ready_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_title = global::Jaktapp.Resource.String.appcenter_distribute_install_ready_title;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_notification_category = global::Jaktapp.Resource.String.appcenter_distribute_notification_category;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_message = global::Jaktapp.Resource.String.appcenter_distribute_unknown_sources_dialog_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_settings = global::Jaktapp.Resource.String.appcenter_distribute_unknown_sources_dialog_settings;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_download = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_download;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_mandatory = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_message_mandatory;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_optional = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_message_optional;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_postpone = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_postpone;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_title = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_title;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_view_release_notes = global::Jaktapp.Resource.String.appcenter_distribute_update_dialog_view_release_notes;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_ignore = global::Jaktapp.Resource.String.appcenter_distribute_update_failed_dialog_ignore;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_message = global::Jaktapp.Resource.String.appcenter_distribute_update_failed_dialog_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_reinstall = global::Jaktapp.Resource.String.appcenter_distribute_update_failed_dialog_reinstall;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_title = global::Jaktapp.Resource.String.appcenter_distribute_update_failed_dialog_title;
+			global::Microsoft.AppCenter.Push.Android.Resource.Drawable.ic_stat_notify_dot = global::Jaktapp.Resource.Drawable.ic_stat_notify_dot;
+			global::Microsoft.AppCenter.Push.Android.Resource.String.library_name = global::Jaktapp.Resource.String.library_name;
 		}
 		
 		public partial class Animation
@@ -209,6 +267,42 @@ namespace Jaktapp
 			
 			// aapt resource value: 0x7f010092
 			public const int activityChooserViewStyle = 2130772114;
+			
+			// aapt resource value: 0x7f01017a
+			public const int ahBarColor = 2130772346;
+			
+			// aapt resource value: 0x7f010182
+			public const int ahBarLength = 2130772354;
+			
+			// aapt resource value: 0x7f010181
+			public const int ahBarWidth = 2130772353;
+			
+			// aapt resource value: 0x7f01017f
+			public const int ahCircleColor = 2130772351;
+			
+			// aapt resource value: 0x7f01017e
+			public const int ahDelayMillis = 2130772350;
+			
+			// aapt resource value: 0x7f010180
+			public const int ahRadius = 2130772352;
+			
+			// aapt resource value: 0x7f01017b
+			public const int ahRimColor = 2130772347;
+			
+			// aapt resource value: 0x7f01017c
+			public const int ahRimWidth = 2130772348;
+			
+			// aapt resource value: 0x7f01017d
+			public const int ahSpinSpeed = 2130772349;
+			
+			// aapt resource value: 0x7f010177
+			public const int ahText = 2130772343;
+			
+			// aapt resource value: 0x7f010178
+			public const int ahTextColor = 2130772344;
+			
+			// aapt resource value: 0x7f010179
+			public const int ahTextSize = 2130772345;
 			
 			// aapt resource value: 0x7f0100b7
 			public const int alertDialogButtonGroupStyle = 2130772151;
@@ -2359,26 +2453,26 @@ namespace Jaktapp
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02008e
-			public const int avd_hide_password_1 = 2130837646;
+			// aapt resource value: 0x7f020093
+			public const int avd_hide_password_1 = 2130837651;
 			
-			// aapt resource value: 0x7f02008f
-			public const int avd_hide_password_2 = 2130837647;
+			// aapt resource value: 0x7f020094
+			public const int avd_hide_password_2 = 2130837652;
 			
-			// aapt resource value: 0x7f020090
-			public const int avd_hide_password_3 = 2130837648;
+			// aapt resource value: 0x7f020095
+			public const int avd_hide_password_3 = 2130837653;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020091
-			public const int avd_show_password_1 = 2130837649;
+			// aapt resource value: 0x7f020096
+			public const int avd_show_password_1 = 2130837654;
 			
-			// aapt resource value: 0x7f020092
-			public const int avd_show_password_2 = 2130837650;
+			// aapt resource value: 0x7f020097
+			public const int avd_show_password_2 = 2130837655;
 			
-			// aapt resource value: 0x7f020093
-			public const int avd_show_password_3 = 2130837651;
+			// aapt resource value: 0x7f020098
+			public const int avd_show_password_3 = 2130837656;
 			
 			// aapt resource value: 0x7f020055
 			public const int common_full_open_on_phone = 2130837589;
@@ -2474,82 +2568,97 @@ namespace Jaktapp
 			public const int ic_add_gray = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_friends_gray = 2130837620;
+			public const int ic_errorstatus = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_history_gray = 2130837621;
+			public const int ic_friends_gray = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_home_gray = 2130837622;
+			public const int ic_history_gray = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_map_gray = 2130837623;
+			public const int ic_home_gray = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_menu_white = 2130837624;
+			public const int ic_map_gray = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_settings_gray = 2130837625;
+			public const int ic_menu_white = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_user_orange = 2130837626;
+			public const int ic_settings_gray = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int map_gray = 2130837627;
+			public const int ic_stat_notify_dot = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int navigation_empty_icon = 2130837628;
+			public const int ic_successstatus = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int notification_action_background = 2130837629;
+			public const int ic_user_orange = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int notification_bg = 2130837630;
+			public const int map_gray = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int notification_bg_low = 2130837631;
+			public const int navigation_empty_icon = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int notification_bg_low_normal = 2130837632;
+			public const int notification_action_background = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int notification_bg_low_pressed = 2130837633;
+			public const int notification_bg = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int notification_bg_normal = 2130837634;
+			public const int notification_bg_low = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int notification_bg_normal_pressed = 2130837635;
+			public const int notification_bg_low_normal = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int notification_icon_background = 2130837636;
-			
-			// aapt resource value: 0x7f02008c
-			public const int notification_template_icon_bg = 2130837644;
-			
-			// aapt resource value: 0x7f02008d
-			public const int notification_template_icon_low_bg = 2130837645;
+			public const int notification_bg_low_pressed = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int notification_tile_bg = 2130837637;
+			public const int notification_bg_normal = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int notify_panel_notification_icon_bg = 2130837638;
+			public const int notification_bg_normal_pressed = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int settings_gray = 2130837639;
+			public const int notification_icon_background = 2130837639;
+			
+			// aapt resource value: 0x7f020091
+			public const int notification_template_icon_bg = 2130837649;
+			
+			// aapt resource value: 0x7f020092
+			public const int notification_template_icon_low_bg = 2130837650;
 			
 			// aapt resource value: 0x7f020088
-			public const int tiur_indigo_512 = 2130837640;
+			public const int notification_tile_bg = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int tiur_white_red_512 = 2130837641;
+			public const int notify_panel_notification_icon_bg = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int tooltip_frame_dark = 2130837642;
+			public const int roundedbg = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int tooltip_frame_light = 2130837643;
+			public const int roundedbgdark = 2130837643;
+			
+			// aapt resource value: 0x7f02008c
+			public const int settings_gray = 2130837644;
+			
+			// aapt resource value: 0x7f02008d
+			public const int tiur_indigo_512 = 2130837645;
+			
+			// aapt resource value: 0x7f02008e
+			public const int tiur_white_red_512 = 2130837646;
+			
+			// aapt resource value: 0x7f02008f
+			public const int tooltip_frame_dark = 2130837647;
+			
+			// aapt resource value: 0x7f020090
+			public const int tooltip_frame_light = 2130837648;
 			
 			static Drawable()
 			{
@@ -2570,8 +2679,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c003e
 			public const int CTRL = 2131492926;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int DrawerLayout = 2131493034;
+			// aapt resource value: 0x7f0c00ae
+			public const int DrawerLayout = 2131493038;
 			
 			// aapt resource value: 0x7f0c00a3
 			public const int DrawerUserNameText = 2131493027;
@@ -2579,32 +2688,32 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c003f
 			public const int FUNCTION = 2131492927;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int FragmentFrame = 2131493036;
+			// aapt resource value: 0x7f0c00b0
+			public const int FragmentFrame = 2131493040;
+			
+			// aapt resource value: 0x7f0c00b1
+			public const int LeftDrawer = 2131493041;
 			
 			// aapt resource value: 0x7f0c00ad
-			public const int LeftDrawer = 2131493037;
+			public const int LoginBtn = 2131493037;
+			
+			// aapt resource value: 0x7f0c00aa
+			public const int LoginLayout = 2131493034;
 			
 			// aapt resource value: 0x7f0c00a9
-			public const int LoginBtn = 2131493033;
-			
-			// aapt resource value: 0x7f0c00a6
-			public const int LoginLayout = 2131493030;
-			
-			// aapt resource value: 0x7f0c00a5
-			public const int LoginToolbar = 2131493029;
+			public const int LoginToolbar = 2131493033;
 			
 			// aapt resource value: 0x7f0c0040
 			public const int META = 2131492928;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int MainToolbar = 2131493035;
+			// aapt resource value: 0x7f0c00af
+			public const int MainToolbar = 2131493039;
 			
-			// aapt resource value: 0x7f0c00ae
-			public const int MapFrame = 2131493038;
+			// aapt resource value: 0x7f0c00b2
+			public const int MapFrame = 2131493042;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int Password = 2131493032;
+			// aapt resource value: 0x7f0c00ac
+			public const int Password = 2131493036;
 			
 			// aapt resource value: 0x7f0c0041
 			public const int SHIFT = 2131492929;
@@ -2612,14 +2721,20 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0042
 			public const int SYM = 2131492930;
 			
-			// aapt resource value: 0x7f0c00c2
-			public const int Toolbar = 2131493058;
+			// aapt resource value: 0x7f0c00c6
+			public const int SettingsImage = 2131493062;
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int UserName = 2131493031;
+			// aapt resource value: 0x7f0c00c8
+			public const int Toolbar = 2131493064;
 			
-			// aapt resource value: 0x7f0c00b2
-			public const int action0 = 2131493042;
+			// aapt resource value: 0x7f0c00ab
+			public const int UserName = 2131493035;
+			
+			// aapt resource value: 0x7f0c00c7
+			public const int VersionText = 2131493063;
+			
+			// aapt resource value: 0x7f0c00b6
+			public const int action0 = 2131493046;
 			
 			// aapt resource value: 0x7f0c0086
 			public const int action_bar = 2131492998;
@@ -2642,17 +2757,17 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0064
 			public const int action_bar_title = 2131492964;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int action_container = 2131493039;
+			// aapt resource value: 0x7f0c00b3
+			public const int action_container = 2131493043;
 			
 			// aapt resource value: 0x7f0c0087
 			public const int action_context_bar = 2131492999;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int action_divider = 2131493046;
+			// aapt resource value: 0x7f0c00ba
+			public const int action_divider = 2131493050;
 			
-			// aapt resource value: 0x7f0c00b0
-			public const int action_image = 2131493040;
+			// aapt resource value: 0x7f0c00b4
+			public const int action_image = 2131493044;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -2669,11 +2784,11 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0066
 			public const int action_mode_close_button = 2131492966;
 			
-			// aapt resource value: 0x7f0c00b1
-			public const int action_text = 2131493041;
+			// aapt resource value: 0x7f0c00b5
+			public const int action_text = 2131493045;
 			
-			// aapt resource value: 0x7f0c00bf
-			public const int actions = 2131493055;
+			// aapt resource value: 0x7f0c00c3
+			public const int actions = 2131493059;
 			
 			// aapt resource value: 0x7f0c0067
 			public const int activity_chooser_view_content = 2131492967;
@@ -2696,8 +2811,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0043
 			public const int always = 2131492931;
 			
-			// aapt resource value: 0x7f0c00a4
-			public const int appbarlayout = 2131493028;
+			// aapt resource value: 0x7f0c00a8
+			public const int appbarlayout = 2131493032;
 			
 			// aapt resource value: 0x7f0c0060
 			public const int async = 2131492960;
@@ -2717,8 +2832,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c006d
 			public const int buttonPanel = 2131492973;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int cancel_action = 2131493043;
+			// aapt resource value: 0x7f0c00b7
+			public const int cancel_action = 2131493047;
 			
 			// aapt resource value: 0x7f0c004f
 			public const int center = 2131492943;
@@ -2732,8 +2847,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c007d
 			public const int checkbox = 2131492989;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int chronometer = 2131493051;
+			// aapt resource value: 0x7f0c00bf
+			public const int chronometer = 2131493055;
 			
 			// aapt resource value: 0x7f0c0058
 			public const int clip_horizontal = 2131492952;
@@ -2792,8 +2907,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c003b
 			public const int end = 2131492923;
 			
-			// aapt resource value: 0x7f0c00c1
-			public const int end_padder = 2131493057;
+			// aapt resource value: 0x7f0c00c5
+			public const int end_padder = 2131493061;
 			
 			// aapt resource value: 0x7f0c004a
 			public const int enterAlways = 2131492938;
@@ -2840,8 +2955,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c006c
 			public const int icon = 2131492972;
 			
-			// aapt resource value: 0x7f0c00c0
-			public const int icon_group = 2131493056;
+			// aapt resource value: 0x7f0c00c4
+			public const int icon_group = 2131493060;
 			
 			// aapt resource value: 0x7f0c0024
 			public const int icon_only = 2131492900;
@@ -2852,8 +2967,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0069
 			public const int image = 2131492969;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int info = 2131493052;
+			// aapt resource value: 0x7f0c00c0
+			public const int info = 2131493056;
 			
 			// aapt resource value: 0x7f0c0063
 			public const int italic = 2131492963;
@@ -2882,29 +2997,38 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c006b
 			public const int list_item = 2131492971;
 			
-			// aapt resource value: 0x7f0c00c7
-			public const int main_menu_item_create_hunt = 2131493063;
+			// aapt resource value: 0x7f0c00a6
+			public const int loadingImage = 2131493030;
 			
-			// aapt resource value: 0x7f0c00c8
-			public const int main_menu_item_friends = 2131493064;
+			// aapt resource value: 0x7f0c00a4
+			public const int loadingProgressBar = 2131493028;
+			
+			// aapt resource value: 0x7f0c00a7
+			public const int loadingProgressWheel = 2131493031;
+			
+			// aapt resource value: 0x7f0c00cd
+			public const int main_menu_item_create_hunt = 2131493069;
+			
+			// aapt resource value: 0x7f0c00ce
+			public const int main_menu_item_friends = 2131493070;
+			
+			// aapt resource value: 0x7f0c00cf
+			public const int main_menu_item_history = 2131493071;
+			
+			// aapt resource value: 0x7f0c00cc
+			public const int main_menu_item_map = 2131493068;
+			
+			// aapt resource value: 0x7f0c00d0
+			public const int main_menu_item_settings = 2131493072;
+			
+			// aapt resource value: 0x7f0c00cb
+			public const int masked = 2131493067;
+			
+			// aapt resource value: 0x7f0c00b9
+			public const int media_actions = 2131493049;
 			
 			// aapt resource value: 0x7f0c00c9
-			public const int main_menu_item_history = 2131493065;
-			
-			// aapt resource value: 0x7f0c00c6
-			public const int main_menu_item_map = 2131493062;
-			
-			// aapt resource value: 0x7f0c00ca
-			public const int main_menu_item_settings = 2131493066;
-			
-			// aapt resource value: 0x7f0c00c5
-			public const int masked = 2131493061;
-			
-			// aapt resource value: 0x7f0c00b5
-			public const int media_actions = 2131493045;
-			
-			// aapt resource value: 0x7f0c00c3
-			public const int message = 2131493059;
+			public const int message = 2131493065;
 			
 			// aapt resource value: 0x7f0c003c
 			public const int middle = 2131492924;
@@ -2927,14 +3051,14 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c001f
 			public const int normal = 2131492895;
 			
-			// aapt resource value: 0x7f0c00be
-			public const int notification_background = 2131493054;
+			// aapt resource value: 0x7f0c00c2
+			public const int notification_background = 2131493058;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int notification_main_column = 2131493048;
+			// aapt resource value: 0x7f0c00bc
+			public const int notification_main_column = 2131493052;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int notification_main_column_container = 2131493047;
+			// aapt resource value: 0x7f0c00bb
+			public const int notification_main_column_container = 2131493051;
 			
 			// aapt resource value: 0x7f0c0056
 			public const int parallax = 2131492950;
@@ -2960,11 +3084,11 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0054
 			public const int right = 2131492948;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int right_icon = 2131493053;
+			// aapt resource value: 0x7f0c00c1
+			public const int right_icon = 2131493057;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int right_side = 2131493049;
+			// aapt resource value: 0x7f0c00bd
+			public const int right_side = 2131493053;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int satellite = 2131492896;
@@ -3074,8 +3198,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0055
 			public const int start = 2131492949;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int status_bar_latest_event_content = 2131493044;
+			// aapt resource value: 0x7f0c00b8
+			public const int status_bar_latest_event_content = 2131493048;
 			
 			// aapt resource value: 0x7f0c0080
 			public const int submenuarrow = 2131492992;
@@ -3104,6 +3228,9 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0073
 			public const int textSpacerNoTitle = 2131492979;
 			
+			// aapt resource value: 0x7f0c00a5
+			public const int textViewStatus = 2131493029;
+			
 			// aapt resource value: 0x7f0c00a2
 			public const int text_input_password_toggle = 2131493026;
 			
@@ -3113,8 +3240,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0015
 			public const int textinput_error = 2131492885;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int time = 2131493050;
+			// aapt resource value: 0x7f0c00be
+			public const int time = 2131493054;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int title = 2131492892;
@@ -3161,8 +3288,8 @@ namespace Jaktapp
 			// aapt resource value: 0x7f0c0016
 			public const int view_offset_helper = 2131492886;
 			
-			// aapt resource value: 0x7f0c00c4
-			public const int visible = 2131493060;
+			// aapt resource value: 0x7f0c00ca
+			public const int visible = 2131493066;
 			
 			// aapt resource value: 0x7f0c0026
 			public const int wide = 2131492902;
@@ -3365,79 +3492,88 @@ namespace Jaktapp
 			public const int HistoryFragment = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int Login = 2130968620;
+			public const int loading = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int MainActivity = 2130968621;
+			public const int loadingimage = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int MapFragment = 2130968622;
+			public const int loadingprogress = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_action = 2130968623;
+			public const int LoginActivity = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_action_tombstone = 2130968624;
+			public const int MainActivity = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_media_action = 2130968625;
+			public const int MapFragment = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_media_cancel_action = 2130968626;
+			public const int notification_action = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media = 2130968627;
+			public const int notification_action_tombstone = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media_custom = 2130968628;
+			public const int notification_media_action = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media_narrow = 2130968629;
+			public const int notification_media_cancel_action = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_big_media_narrow_custom = 2130968630;
+			public const int notification_template_big_media = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_custom_big = 2130968631;
+			public const int notification_template_big_media_custom = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_icon_group = 2130968632;
+			public const int notification_template_big_media_narrow = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_lines_media = 2130968633;
+			public const int notification_template_big_media_narrow_custom = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_media = 2130968634;
+			public const int notification_template_custom_big = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_media_custom = 2130968635;
+			public const int notification_template_icon_group = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_part_chronometer = 2130968636;
+			public const int notification_template_lines_media = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_part_time = 2130968637;
+			public const int notification_template_media = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int select_dialog_item_material = 2130968638;
+			public const int notification_template_media_custom = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int select_dialog_multichoice_material = 2130968639;
+			public const int notification_template_part_chronometer = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int select_dialog_singlechoice_material = 2130968640;
+			public const int notification_template_part_time = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int SettingsFragment = 2130968641;
+			public const int select_dialog_item_material = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int support_simple_spinner_dropdown_item = 2130968642;
+			public const int select_dialog_multichoice_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int Toolbar = 2130968643;
+			public const int select_dialog_singlechoice_material = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int tooltip = 2130968644;
+			public const int SettingsFragment = 2130968644;
+			
+			// aapt resource value: 0x7f040045
+			public const int support_simple_spinner_dropdown_item = 2130968645;
+			
+			// aapt resource value: 0x7f040046
+			public const int Toolbar = 2130968646;
+			
+			// aapt resource value: 0x7f040047
+			public const int tooltip = 2130968647;
 			
 			static Layout()
 			{
@@ -3571,11 +3707,68 @@ namespace Jaktapp
 			// aapt resource value: 0x7f090021
 			public const int abc_toolbar_collapse_description = 2131296289;
 			
-			// aapt resource value: 0x7f090038
-			public const int app_name = 2131296312;
+			// aapt resource value: 0x7f09004c
+			public const int app_name = 2131296332;
 			
 			// aapt resource value: 0x7f09002f
 			public const int appbar_scrolling_view_behavior = 2131296303;
+			
+			// aapt resource value: 0x7f090039
+			public const int appcenter_distribute_dialog_actioned_on_disabled_toast = 2131296313;
+			
+			// aapt resource value: 0x7f09003a
+			public const int appcenter_distribute_download_progress_number_format = 2131296314;
+			
+			// aapt resource value: 0x7f09003b
+			public const int appcenter_distribute_downloading_mandatory_update = 2131296315;
+			
+			// aapt resource value: 0x7f09003c
+			public const int appcenter_distribute_install = 2131296316;
+			
+			// aapt resource value: 0x7f09003d
+			public const int appcenter_distribute_install_ready_message = 2131296317;
+			
+			// aapt resource value: 0x7f09003e
+			public const int appcenter_distribute_install_ready_title = 2131296318;
+			
+			// aapt resource value: 0x7f09003f
+			public const int appcenter_distribute_notification_category = 2131296319;
+			
+			// aapt resource value: 0x7f090040
+			public const int appcenter_distribute_unknown_sources_dialog_message = 2131296320;
+			
+			// aapt resource value: 0x7f090041
+			public const int appcenter_distribute_unknown_sources_dialog_settings = 2131296321;
+			
+			// aapt resource value: 0x7f090042
+			public const int appcenter_distribute_update_dialog_download = 2131296322;
+			
+			// aapt resource value: 0x7f090043
+			public const int appcenter_distribute_update_dialog_message_mandatory = 2131296323;
+			
+			// aapt resource value: 0x7f090044
+			public const int appcenter_distribute_update_dialog_message_optional = 2131296324;
+			
+			// aapt resource value: 0x7f090045
+			public const int appcenter_distribute_update_dialog_postpone = 2131296325;
+			
+			// aapt resource value: 0x7f090046
+			public const int appcenter_distribute_update_dialog_title = 2131296326;
+			
+			// aapt resource value: 0x7f090047
+			public const int appcenter_distribute_update_dialog_view_release_notes = 2131296327;
+			
+			// aapt resource value: 0x7f090048
+			public const int appcenter_distribute_update_failed_dialog_ignore = 2131296328;
+			
+			// aapt resource value: 0x7f090049
+			public const int appcenter_distribute_update_failed_dialog_message = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int appcenter_distribute_update_failed_dialog_reinstall = 2131296330;
+			
+			// aapt resource value: 0x7f09004b
+			public const int appcenter_distribute_update_failed_dialog_title = 2131296331;
 			
 			// aapt resource value: 0x7f090030
 			public const int bottom_sheet_behavior = 2131296304;
@@ -3633,6 +3826,9 @@ namespace Jaktapp
 			
 			// aapt resource value: 0x7f090010
 			public const int common_signin_button_text_long = 2131296272;
+			
+			// aapt resource value: 0x7f090038
+			public const int library_name = 2131296312;
 			
 			// aapt resource value: 0x7f090032
 			public const int password_toggle_content_description = 2131296306;
@@ -6406,6 +6602,56 @@ namespace Jaktapp
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
+			
+			public static int[] ProgressWheel = new int[] {
+					2130772343,
+					2130772344,
+					2130772345,
+					2130772346,
+					2130772347,
+					2130772348,
+					2130772349,
+					2130772350,
+					2130772351,
+					2130772352,
+					2130772353,
+					2130772354};
+			
+			// aapt resource value: 3
+			public const int ProgressWheel_ahBarColor = 3;
+			
+			// aapt resource value: 11
+			public const int ProgressWheel_ahBarLength = 11;
+			
+			// aapt resource value: 10
+			public const int ProgressWheel_ahBarWidth = 10;
+			
+			// aapt resource value: 8
+			public const int ProgressWheel_ahCircleColor = 8;
+			
+			// aapt resource value: 7
+			public const int ProgressWheel_ahDelayMillis = 7;
+			
+			// aapt resource value: 9
+			public const int ProgressWheel_ahRadius = 9;
+			
+			// aapt resource value: 4
+			public const int ProgressWheel_ahRimColor = 4;
+			
+			// aapt resource value: 5
+			public const int ProgressWheel_ahRimWidth = 5;
+			
+			// aapt resource value: 6
+			public const int ProgressWheel_ahSpinSpeed = 6;
+			
+			// aapt resource value: 0
+			public const int ProgressWheel_ahText = 0;
+			
+			// aapt resource value: 1
+			public const int ProgressWheel_ahTextColor = 1;
+			
+			// aapt resource value: 2
+			public const int ProgressWheel_ahTextSize = 2;
 			
 			public static int[] RecycleListView = new int[] {
 					2130772204,
