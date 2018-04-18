@@ -26,7 +26,6 @@ namespace Jaktapp
             //Initialize app center
             AppCenter.Start("d94d14eb-eb5d-4a1a-b086-4d306ad727f9", typeof(Analytics), typeof(Crashes));
 
-
             StartApp();
         }
 
